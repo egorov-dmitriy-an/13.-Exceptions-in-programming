@@ -7,8 +7,8 @@ public class WriteData {
         String nameFile = data[0] + ".txt";
 
         try (FileWriter writer = new FileWriter(nameFile, true)) {
-            for (int i = 0; i < data.length; i++) {
-                if (i < data.length - 1) {
+            for (int i = 0; i <= data.length; i++) {
+                if (i < data.length) {
                     writer.write("<" + data[i] + ">");
                 } else {
                     writer.write("\n");
